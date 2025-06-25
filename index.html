@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Math - Raden Panzi Wirayudha</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Math - R. Panzi W.</h1>
+    <hr>
+    <p><b>Tools ini digunakan untuk menghitung luas segitiga dan keliling segitiga</b></p>
+
+    <div class="nav-buttons">
+      <button class="btn segitiga">Segitiga</button>
+    </div>
+
+    <div class="content">
+      <!-- Box Luas Segitiga -->
+      <div class="box">
+        <h2>Luas Segitiga</h2>
+        <img src="img.png" alt="Segitiga" />
+        <p><b>Rumus Luas Segitiga: L = 1/2 × alas × tinggi</b></p>
+        <p>Di mana:</p>
+        <p>L = luas</p>
+        <p>a = panjang alas</p>
+        <p>t = tinggi</p>
+
+        <h3>Hitung Luas Segitiga</h3>
+        <form onsubmit="hitungLuas(event)">
+          <label>Alas:</label>
+          <input type="number" id="alas" placeholder="Masukkan Alas Segitiga" required />
+          <label>Tinggi:</label>
+          <input type="number" id="tinggi" placeholder="Masukkan Tinggi Segitiga" required />
+          <div class="form-buttons">
+            <button type="submit">Hitung</button>
+            <button type="button" class="btn-reset" onclick="resetLuas()">Reset</button>
+          </div>
+          <p id="hasilLuas"></p>
+        </form>
+      </div>
+
+      <!-- Box Keliling Segitiga -->
+      <div class="box">
+        <h2>Keliling Segitiga</h2>
+        <img src="img.png" alt="Segitiga" />
+        <p><b>Rumus Keliling Segitiga: K = S1 + S2 + S3</b></p>
+        <p>Di mana:</p>
+        <p>K = keliling</p>
+        <p>S1 = sisi A</p>
+        <p>S2 = sisi B</p>
+        <p>S3 = sisi C</p>
+        <hr>
+        <h3>Hitung Keliling Segitiga</h3>
+        <form onsubmit="hitungKeliling(event)">
+          <label>Sisi A:</label>
+          <input type="number" id="s1" placeholder="Masukkan Sisi A" required />
+          <label>Sisi B:</label>
+          <input type="number" id="s2" placeholder="Masukkan Sisi B" required />
+          <label>Sisi C:</label>
+          <input type="number" id="s3" placeholder="Masukkan Sisi C" required />
+          <div class="form-buttons">
+            <button type="submit">Hitung</button>
+            <button type="button" class="btn-reset" onclick="resetKeliling()">Reset</button>
+          </div>
+          <p id="hasilKeliling"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+	<div class="biji">
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+████░▄▄▀█▀▄▄▀█░███░███
+█▄▄█░▀▀▄█░▀▀░█▄▀░▀▄█▄▄
+████▄█▄▄█░█████▄█▄████
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+  </div>
+</html>
